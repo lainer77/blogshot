@@ -44,10 +44,10 @@ export default class RootDocument extends Document {
       <html>
         <Head>
           <meta charSet="utf-8" />
-          <meta property="og:title" content="MakeStory" />
-          <meta property="og:site_name" content="MakeStory" />
+          <meta property="og:title" content="BlogShot" />
+          <meta property="og:site_name" content="BlogShot" />
           <meta property="og:type" content="website" />
-          <meta property="og:description" content="MakeStroy Game Hub" />
+          <meta property="og:description" content="BlogShot" />
 
           <link
             rel="stylesheet"

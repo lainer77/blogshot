@@ -9,7 +9,9 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     backgroundColor: "white",
-    width: "100%"
+    width: "100%",
+    display: "flex",
+    justifyContent: "center"
   },
   appbar: {
     flexGrow: 1,
@@ -35,15 +37,13 @@ const TypographyStyle = styled(Typography)`
     display: inline-block;
   }
 `;
-
 const TextContainer = styled.div`
-    && {
-        min-height: ${pTr(42)};
-        /* background-color: ${BASE_COLOR}; */
-        padding: ${pTr(2)} 0 ${pTr(2)} 0;
-        display: inline-block;
-        text-align: center;
-    }
+  && {
+    min-height: ${pTr(42)};
+    padding: ${pTr(2)} 0 ${pTr(2)} 0;
+    display: inline-block;
+    text-align: center;
+  }
 `;
 
 export default function HomeArea1() {
@@ -51,18 +51,11 @@ export default function HomeArea1() {
 
   return (
     <div className={classes.root}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center"
-        }}
-      >
-        <ContantStyle>
-          <TextContainer>
-            <TypographyStyle>{constants.INFO.HOME.MAIN_TITLE}</TypographyStyle>
-          </TextContainer>
-        </ContantStyle>
-      </div>
+      <ContantStyle>
+        <TextContainer>
+          <TypographyStyle>{constants.INFO.HOME.MAIN_TITLE}</TypographyStyle>
+        </TextContainer>
+      </ContantStyle>
     </div>
   );
 }

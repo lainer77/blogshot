@@ -40,7 +40,7 @@ export const NAVER = {
 };
 export const INFO = {
   HOME: {
-    MAIN_TITLE: "MakeStory",
+    MAIN_TITLE: "BlogShot",
     MEDICO_THINK: {
       title:
         "메디코스코프의 생각, \n \
@@ -182,8 +182,8 @@ export const INFO = {
 
 // medico api
 // export const BASE_URL = "medico-api.devbox.app/v1";
-export const BASE_URL = "api.medicoscope.com/v1";
-export const HOME_URL = "api.medicoscope.com";
+export const BASE_URL = "localhost:3003";
+export const HOME_URL = "localhost:3003";
 
 // api params
 export const API_TIME_OUT = 30000;
